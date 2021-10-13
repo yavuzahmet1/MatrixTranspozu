@@ -1,0 +1,25 @@
+public class Main {
+
+    public static void main(String[] args) {
+        int[][] matrix = {{2, 3, 4}, {5, 6, 4}, {7, 9, 1}};
+        int transpoz[][] = new int[matrix.length][matrix.length];
+        System.out.println("Mevcut matrix");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                System.out.print(matrix[i][j] + "\t");
+                transpoz[j][i] = matrix[i][j];
+            }
+            System.out.println();
+        }
+
+        System.out.println("===MEVCUT MATRIX'İN TRANSPOZU===");
+        for (int j = 0; j < matrix.length; j++) {
+            for (int i = 0; i < matrix.length; i++) {
+                System.out.print(transpoz[j][i]  + "\t");
+
+            }
+            System.out.println();
+        }
+    }
+}
+
